@@ -3,17 +3,6 @@ const thename = document.getElementById('name');
 
 
 
-// q1answer.addEventListener('click', check());
-// q2answer.addEventListener('click', check());
-
-
-
-// function getResults() {
-//     axios.get('http://localhost:4004/inputs')
-//         .then(res => {
-//             alert(res.data)
-//         })
-// };
 
 function submitBtn (e) {
     e.preventDefault();
@@ -24,23 +13,41 @@ function submitBtn (e) {
     }
 
     const q1answer = document.querySelector('input[name="q1"]:checked').value;
-    console.log(q1answer);
 
     const q2answer = document.querySelector('input[name="q2"]:checked').value;
-    console.log(q2answer);
+
+    const q3answer = document.querySelector('input[name="q3"]:checked').value;
+
+    const q4answer = document.querySelector('input[name="q4"]:checked').value;
+
+    const q5answer = document.querySelector('input[name="q5"]:checked').value;
+
+    const q6answer = document.querySelector('input[name="q6"]:checked').value;
+
+    const q7answer = document.querySelector('input[name="q7"]:checked').value;
 
 
     const body = {
         name : thename.value,
         questionone : q1answer,
-        questiontwo : q2answer
+        questiontwo : q2answer,
+        questionthree : q3answer,
+        questionfour : q4answer,
+        questionfive : q5answer,
+        questionsix : q6answer,
+        questionseven : q7answer
     };
-    console.log(`this is the body ${body.name} ${body.questionone} ${body.questiontwo}`);
     axios.post("http://localhost:4004/api/inputs", body)
         .then(res => {
                 console.log(res.data)
                 alert("Got your entry")})
         .catch(err => console.log(err));
-    };
+
+    // axios.get("/api/inputs")
+    //         .then(res => {
+    //         console.log(res.data)
+    //         alert(``)
+    // })
+ };
 
 submit.addEventListener('click', submitBtn);
