@@ -19,7 +19,7 @@ module.exports = {
         const { body } = req.body;
         console.log(req.body);
         resultsArr.push(body);
-        console.log(resultsArr[0]);
+        console.log(resultsArr);
         res.status(200).send(resultsArr);
     },
 

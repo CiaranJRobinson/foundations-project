@@ -7,6 +7,7 @@ const cors = require('cors')
 app.use(express.json());
 app.use(cors());
 
+
 // app.get('/', function(req,res){
 //     res.sendFile(path.join(__dirname, '/public/index.html'));
 // });
