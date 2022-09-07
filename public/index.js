@@ -38,16 +38,16 @@ function submitBtn (e) {
         questionseven : q7answer
     };
     axios.post("http://localhost:4004/api/inputs", body)
-        .then(res => {
-                console.log(res.data)
-                alert("Got your entry")})
+        .then(response => {
+                console.log(response.data)
+                    alert("Got your entry")
+                axios.get("http://localhost:4004/api/inputs")
+                    .then(res => {
+                        console.log(res.data)
+                                        })
+            })
         .catch(err => console.log(err));
 
-    // axios.get("/api/inputs")
-    //         .then(res => {
-    //         console.log(res.data)
-    //         alert(``)
-    // })
- };
+    };
 
 submit.addEventListener('click', submitBtn);

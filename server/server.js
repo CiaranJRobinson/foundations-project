@@ -18,9 +18,9 @@ app.use(cors());
 //     res.sendFile(path.join(__dirname, '/public/index.css'));
 // });
 
-const {submitBtn} = require('./controller');
+const {submitBtn, getResults} = require('./controller');
 
-// app.get("/api/inputs", getResults);
+app.get("/api/inputs", getResults);
 app.post("/api/inputs", submitBtn);
 
 
