@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Personality Quiz</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body><header><h1>Dog Personality Quiz</h1></header>
+
+    <main>
+        <h2>Lets figure out what type of dog best matches your personality!</h2>
+        
+            <p><h4>First, let's enter your name:</h4></p>
+        <label for="name"></label>
+            <input type="text" id="name" name="name" placeholder="Type name here"/><br>
+            <br> <p><h4>Now, let's get started:</h4></p>
+        <div class="question">
+        <div class="qtitles"><h5>On hikes, do you like to get to the destination quickly, or stroll casually?</h5></div>
+            <label for="speedy">I'm a power hiker, move out of the way, slackers!</label><input type="radio" id="speedy" name="q1" value="1"/><br>
+            <label for="slow">I like to stop and smell the roses~</label><input type="radio"id="slow" name="q1" value="0"/>
+        </div><br><br>
+        <div class="question">
+        <div class="qtitles"><h5>How quickly could you inhale approximately 5 soft serve ice cream cones?</h5></div>
+            <label for="quick">So fast, let me beat the world record!</label>
+            <input type="radio" id="quick" name="q2" value="1"/>
+            <br>
+            <label for="avg">An average amount of time, I guess?</label>
+            <input type="radio" id="avg" name="q2" value="0"/>
+            <br>  </div>
+
+<br><br>
+            <button id="submit">Submit</button>
+        
+
+
+        
+
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
