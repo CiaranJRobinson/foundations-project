@@ -1,24 +1,53 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(71, 113, 128);
+    z-index: auto;
+    border: solid 1px rgb(71, 113, 128);
+    border-radius: 7px;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgb(35, 67, 78);
+}
+
 h1 {
-    font-weight: 700;
-    font-family: Arial, Helvetica, sans-serif;
-    color:rgb(29, 63, 64);
+    mix-blend-mode:darken;
+    z-index: 5;
+    float: left;
 }
 
 h2 { 
     font-weight: 600;
-    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
 
 }
 
 h4 {
     font-family: Arial, Helvetica, sans-serif;
     color:rgb(29, 63, 64);
+    text-align: left;
 
 }
 
 .qtitles {
-    color: cadetblue;
+    color: rgb(45, 76, 88);
     font-style: italic;
+    font-size: larger;
 
 }
 
@@ -27,5 +56,74 @@ header {
 }
 
 body {
-    background-color: aliceblue;
+    background-color: rgb(195, 233, 245);
+    background-image: url("9-97044_cute-dog-shiba-inu-wallpaper-laptop.png");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    position: relative;
+    
 }
+
+#firstname {
+    display:block
+}
+
+#firstq {
+    display: none
+}
+
+#secondq{
+    display: none;
+}
+
+#thirdq{
+    display: none;
+}
+
+#fourthq {
+    display: none;
+}
+
+#fifthq {
+    display: none;
+}
+
+#sixthq {
+    display: none;
+}
+
+#seventhq {
+    display: none;
+}
+
+#questionsbox {
+    background: #E7E7E7;
+    background: -moz-linear-gradient(-45deg, #E7E7E7 0%, #71D7E4 73%, #65B2BB 100%);
+    background: -webkit-linear-gradient(-45deg, #E7E7E7 0%, #71D7E4 73%, #65B2BB 100%);
+    background: linear-gradient(135deg, #E7E7E7 0%, #63adb7 73%, rgb(71, 113, 128) 100%);
+    padding: 20px;
+    opacity: 0.9;
+    }
+
+#boxshadow {
+    -webkit-box-shadow: 12px 11px 12px 4px rgba(0,0,0,0.39); 
+    box-shadow: 12px 11px 12px 4px rgba(0,0,0,0.39);
+    height: 4
+    00px;
+    width: 700px;
+    border:1px solid rgb(63, 117, 119);
+    overflow: auto;
+    border-radius: 15px;
+    }
+        #boxshadow::-webkit-scrollbar {
+            width: 10px;
+        }
+        /* #boxshadow::-webkit-scrollbar-track {
+            background: transparent;
+        } */
+        #boxshadow::-webkit-scrollbar-thumb {
+            background-color: #b9e2ff;
+            border-radius: 10px;
+            border: 2px solid rgb(58, 99, 101);
+            opacity: 0.7;
+        }

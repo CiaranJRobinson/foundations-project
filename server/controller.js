@@ -25,7 +25,7 @@ module.exports = {
         console.log("Endpoint hit")
         let username = resultsArr.shift();
             let {name, questionone, questiontwo, questionthree, questionfour, questionfive, questionsix, questionseven} = username;
-            
+
             let sum = Number(questionone) + Number(questiontwo)+ Number(questionthree)+ Number(questionfour)+ Number(questionfive)+ Number(questionsix)+ Number(questionseven);
 
             console.log(`${name} got ${sum} points!`)
@@ -40,7 +40,7 @@ module.exports = {
         }
         else if (sum === 2){
             console.log(dogobj[5])
-            return res.status(200).send(dogobj[6])
+            return res.status(200).send(dogobj[5])
         }
         else if (sum === 3){
             console.log(dogobj[4])

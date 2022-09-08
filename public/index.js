@@ -2,7 +2,10 @@ const submit = document.getElementById('submit');
 const thename = document.getElementById('name');
 
 
-
+function next( hide, show ) {
+    document.getElementById(hide).style.display="none";
+    document.getElementById(show).style.display="block";
+  }
 
 function submitBtn (e) {
     e.preventDefault();
