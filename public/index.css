@@ -102,28 +102,27 @@ body {
     background: -webkit-linear-gradient(-45deg, #E7E7E7 0%, #71D7E4 73%, #65B2BB 100%);
     background: linear-gradient(135deg, #E7E7E7 0%, #63adb7 73%, rgb(71, 113, 128) 100%);
     padding: 20px;
+    height: 300px;
     opacity: 0.9;
     }
 
 #boxshadow {
     -webkit-box-shadow: 12px 11px 12px 4px rgba(0,0,0,0.39); 
     box-shadow: 12px 11px 12px 4px rgba(0,0,0,0.39);
-    height: 4
-    00px;
-    width: 700px;
+    width: 600px;
     border:1px solid rgb(63, 117, 119);
     overflow: auto;
     border-radius: 15px;
     }
-        #boxshadow::-webkit-scrollbar {
-            width: 10px;
+        #questionbox::-webkit-scrollbar {
+            overflow-y: hidden;
         }
-        /* #boxshadow::-webkit-scrollbar-track {
-            background: transparent;
-        } */
-        #boxshadow::-webkit-scrollbar-thumb {
+        #boxshadow::-webkit-scrollbar {
+            overflow: hidden;
+        }
+        /* #boxshadow::-webkit-scrollbar-thumb {
             background-color: #b9e2ff;
             border-radius: 10px;
             border: 2px solid rgb(58, 99, 101);
             opacity: 0.7;
-        }
+        } */

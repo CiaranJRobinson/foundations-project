@@ -18,10 +18,11 @@ app.use(cors());
 //     res.sendFile(path.join(__dirname, '/public/index.css'));
 // });
 
-const {submitBtn, getResults} = require('./controller');
+const {submitBtn, getResults, getDogs} = require('./controller');
 
 app.get("/api/inputs", getResults);
 app.post("/api/inputs", submitBtn);
+app.get("/api/inputs", getDogs);
 
 
 app.listen(SERVER_PORT, () => console.log(`up on ${SERVER_PORT}`))

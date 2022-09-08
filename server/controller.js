@@ -1,4 +1,4 @@
-// import { dogobj } from '../Dogobj.js';
+
 // sequelize info goes here, as well as exports for seeding the database
 
 // require('dotenv').config();
@@ -12,10 +12,14 @@
 //         }
 //     }
 // });
-const {dogobj} = require('./Dogobj.js');
+const dogobj = require('./dogobj.json');
 const resultsArr = [];
 
 module.exports = {
+    getDogs: (req, res) => {
+        res.status(200).send(dogobj);
+    },
+
     submitBtn: (req, res) => {
         resultsArr.push(req.body);
         res.status(200).send(resultsArr);
@@ -24,7 +28,7 @@ module.exports = {
     getResults: (req, res) => {
         console.log("Endpoint hit")
         let username = resultsArr.shift();
-            let {name, questionone, questiontwo, questionthree, questionfour, questionfive, questionsix, questionseven} = username;
+            let { name, questionone, questiontwo, questionthree, questionfour, questionfive, questionsix, questionseven} = username;
 
             let sum = Number(questionone) + Number(questiontwo)+ Number(questionthree)+ Number(questionfour)+ Number(questionfive)+ Number(questionsix)+ Number(questionseven);
 
@@ -51,7 +55,7 @@ module.exports = {
             return res.status(200).send(dogobj[3])
         }
         else if (sum === 5){
-            console.log(dogobj[2])
+            console.log(dogobj.id[2])
             return res.status(200).send(dogobj[2])
         }
         else if (sum === 6){
