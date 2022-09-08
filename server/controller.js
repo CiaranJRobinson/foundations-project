@@ -20,6 +20,10 @@ module.exports = {
         res.status(200).send(dogobj);
     },
 
+    getTheDogList: (req, res) => {
+        res.status(200).send(dogobj);
+    },
+
     submitBtn: (req, res) => {
         resultsArr.push(req.body);
         res.status(200).send(resultsArr);
@@ -55,7 +59,7 @@ module.exports = {
             return res.status(200).send(dogobj[3])
         }
         else if (sum === 5){
-            console.log(dogobj.id[2])
+            console.log(dogobj[2])
             return res.status(200).send(dogobj[2])
         }
         else if (sum === 6){
