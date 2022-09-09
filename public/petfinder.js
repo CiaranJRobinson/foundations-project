@@ -1,51 +1,52 @@
-const apiKey = 'idge7Hh8Sk7LU1Ym0paSgU3QgaIapej5O34NR8ZBQSSu3BLkqV';
-const apiSecr = 'N2Epm32XlytKdIwPx6Xwo64I0RLgD56x7ShGt6x0';
-const apiToken = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJpZGdlN0hoOFNrN0xVMVltMHBhU2dVM1FnYUlhcGVqNU8zNE5SOFpCUVNTdTNCTGtxViIsImp0aSI6IjY5YjU0YzQ5ZWQxODk0YmRhYzg4ODJhNTA5M2M3ODc0ODE4MGI4NTI5YWE3MWY2YzRhYWEwNmIxOWFkYTUxZjVmMjYzMTIxMDMyM2UyZDNjIiwiaWF0IjoxNjYyNzI0OTI0LCJuYmYiOjE2NjI3MjQ5MjQsImV4cCI6MTY2MjcyODUyNCwic3ViIjoiIiwic2NvcGVzIjpbXX0.Llu4v9Es6fR1Lc2HWOBdc6jJtUANIqfihXRsegy8S7PYCzj1O4M7JNmqVELwlKPAQRn6lxtfSjtUDwOj8EExsT-92BdTUEtwSaDy-3zn3HecKIHrOBj8myrNHowDEIe-yF-OpUObTw4-hEFVw7afn83p04Z_zzpq5CaV6PteZoozFrPKPwJNM0gxltE0i1k7Mq4aR3na6z8IhgZFLkAE-OlMDGeW0BKhYAYDcgnCn5AjRbi7KB6Q5AygmJU9I8VJ5gBjM6kKfidy1Q6pVXgr9MAhuqsNzqZO8tb5aF5WzUWlu9Y31CwRyrAJGg6frrIAY91sZOtx72jEejbRbAeacw';
-
-document.addEventListener('DOMContentLoaded', bindButtons);
+const axios = require('axios');
 
 function bindButtons(){
 	document.getElementById('submitZip').addEventListener('click', function(event){
 		event.preventDefault();
-		var zip = document.getElementById('zip').value; 
-		var url = 'http://api.petfinder.com/pet.getRandom';
+		
+        var zip = document.getElementById('zip').value;})
+    
+        axios.get('https://api.petfinder.com/v2/animals', {
+            params: {
+                'type': 'dog',
+                'location': `${zip}`
+                },
+            headers: {
+                'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJ3OHF4T20weENJQ3FoVlNpTjdwazBlYm1kUHlYek9PcDJnZTlDR3FsVXRibUxtc3lBbCIsImp0aSI6IjZkNDA3OTM0NmE2NTQ1ODdiNDQxMmU5MzY1ODA5NzgxZWRmN2ZlMmRiZGY4MGQ0MWZiZWViY2RkODk5MjU3Y2E1YjRkZmQ1ZGYyYTI4MDUyIiwiaWF0IjoxNjYyNzQ0MDQ5LCJuYmYiOjE2NjI3NDQwNDksImV4cCI6MTY2Mjc0NzY0OSwic3ViIjoiIiwic2NvcGVzIjpbXX0.m8H7nnX6PcRdOV0O3yOtztIpgEGLip3RVInjz0Y-J_LjykSgiMdSgxC0g6qNKuhbIYZ3BL9EFXBUkwZSkc2f5Rl6L1p4QVS5UkfAiVBGM257-gIQSvyvMFY5SPAaI_fspTm2FDmVK2xSkKLtl6imtIjaPg40hYxVSCRd3moO0iB0dI16h07pMcGU80oSPMTj2SjBfSB8iX6610kg1t0Cy7_9EymJLHXDPIrmTM6ZELQhaUKNTYC6s-4SxkDTfR2Ee32jtYPwt2Nkilc8TYKztCPMowIgN2_heFIYlbs9iuA8E4CAVfBXsS09bPWjXQiemvQLsYOQHmEhGmtYtRbYow'
+            }
+        })
+        .then(res => {
+            console.log(res.data)
+                showPets(res.data)})
+            };
 
-        $.ajax({
-			url: url,
-			jsonp: "callback",
-			dataType: "jsonp",
-			data: {
-				key: apiKey,
-				animal: 'dog',
-				'location': zip,
-				output: 'basic',
-				format: 'json'
-			},
-			
-			success: function( response ) {
-				console.log(response); 
-				var dogName = response.petfinder.pet.name.$t;
-				var img = response.petfinder.pet.media.photos.photo[0].$t;
-				var id = response.petfinder.pet.id.$t;
+function showPets(res) { 
+            let dogName = res.data.pet.name;
+            let img = res.data.pet.media.photos.photo[0];
+            var id = res.data.petfinder.pet.id;
+        
+            let newName = document.createElement('a');
+            let newDiv = document.createElement('div');
+                newName.textContent = dogName;
+            newName.href = 'https://www.petfinder.com/petdetail/' + id;
+        
+                const newImg = document.createElement('img');
+                    newImg.src = img;
+                        
+                const list = document.createElement("div");
 
-				var newName = document.createElement('a');
-				var newDiv = document.createElement('div');
-				newName.textContent = dogName;
-				newName.href = 'https://www.petfinder.com/petdetail/' + id;
+                    list.setAttribute("id", "List");
+                        document.body.appendChild(list);
+        
+                        newDiv.appendChild(newName);
+                        list.appendChild(newDiv);
+                        list.appendChild(newImg);
+};
 
-				var newImg = document.createElement('img');
-				newImg.src = img;
-				
-				var list = document.createElement("div");
-				list.setAttribute("id", "List");
-				document.body.appendChild(list);
 
-				newDiv.appendChild(newName);
-				list.appendChild(newDiv);
-				list.appendChild(newImg);
-			}
-		});
-		})
 
-}
+
+document.addEventListener('DOMContentLoaded', bindButtons);
+
+
 

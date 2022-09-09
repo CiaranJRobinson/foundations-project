@@ -56,7 +56,7 @@ header {
 }
 
 body {
-    background-color: rgb(195, 233, 245);
+    background-color: rgb(237, 251, 255);
     background-image: url("./images/9-97044_cute-dog-shiba-inu-wallpaper-laptop.png");
     background-position: right bottom;
     background-repeat: no-repeat;
@@ -98,9 +98,9 @@ body {
 
 #questionsbox {
     background: #E7E7E7;
-    background: -moz-linear-gradient(-45deg, #E7E7E7 0%, #71D7E4 73%, #65B2BB 100%);
-    background: -webkit-linear-gradient(-45deg, #E7E7E7 0%, #71D7E4 73%, #65B2BB 100%);
-    background: linear-gradient(135deg, #E7E7E7 0%, #63adb7 73%, rgb(71, 113, 128) 100%);
+    background: -moz-linear-gradient(-45deg, #f4fbff 0%, #71D7E4 73%, #65B2BB 100%);
+    background: -webkit-linear-gradient(-45deg, #d5f7f2 0%, #71D7E4 73%, #65B2BB 100%);
+    background: linear-gradient(135deg, #E7E7E7 0%, #63adb7 73%, rgb(150, 184, 197) 100%);
     padding: 20px;
     height: 300px;
     opacity: 0.9;
@@ -126,15 +126,18 @@ body {
     flex-wrap: wrap;
     align-items: center;
     z-index: 6;
+    width: 800px;
+    height:auto;
 }
 .dog-card {
     width: 250px;
-    height: 300px;
+    height: auto;
     background:transparent;
     border:3 px solid whitesmoke;
 
 }
 
 .dogpic {
-    object-fit: contain;
+    max-width: 250px;
+    height: auto;
 }

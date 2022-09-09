@@ -19,11 +19,13 @@ app.use(cors());
 // });
 
 const {submitBtn, getResults, getDogs, getTheDogList} = require('./controller');
+const {bindButtons} = require ('../public/petfinder')
 
 app.get("/api/inputs", getResults);
 app.post("/api/inputs", submitBtn);
 app.get("/api/inputs", getDogs);
 app.get("/api/showall", getTheDogList);
+app.get("https://api.petfinder.com/v2/animals", bindButtons);
 
 
 app.listen(SERVER_PORT, () => console.log(`up on ${SERVER_PORT}`))
