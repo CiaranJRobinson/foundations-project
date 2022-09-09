@@ -2,6 +2,7 @@ const submit = document.getElementById('submit');
 const thename = document.getElementById('name');
 const results = document.getElementById('result');
 
+
 function showDog(dog) {
     const dogCard = document.createElement('div')
     dogCard.classList.add('dog-card')

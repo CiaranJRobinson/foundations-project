@@ -1,0 +1,18 @@
+Things left to do:
+
+get more transparent vectors from: http://clipart-library.com/
+
+figure out how to make css fit in the divs 
+https://www.w3schools.com/css/css3_object-fit.asp
+https://www.w3schools.com/css/css3_flexbox_container.asp
+
+shift color pallet? https://colorhunt.co/palettes
+
+make some shapes or background edits: https://bennettfeely.com/clippy/
+
+edit the buttons styling
+
+add petfinder API
+
+stretch: include some functionality to save persons results, reset button to take you back to homepage to start again, extended profile details for each dog
+
