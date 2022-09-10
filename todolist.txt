@@ -1,27 +1,32 @@
 Things left to do:
 
 add one more dog and question, and coding, to make the see all page even
+//done
 
-make json database for adopt a dog page
-add in search function that grabs dog from database that has 
+use api connection to petfinder
+add in search function that grabs from zip
+//done
 
 get more transparent vectors from: http://clipart-library.com/
-// just gonna draw them
+//done
 
 figure out how to make css fit in the divs 
 https://www.w3schools.com/css/css3_object-fit.asp
 https://www.w3schools.com/css/css3_flexbox_container.asp
 //Nicole helped with the auto settings for letting this stay proportional
+//done
 
 
 shift color pallet? https://colorhunt.co/palettes
+//done
 
 make some shapes or background edits: https://bennettfeely.com/clippy/
+//done, went with gradient
 
 edit the buttons styling
+//done
 
-add petfinder API
-//Adding but non functional atm :(
-
-stretch: include some functionality to save persons results, reset button to take you back to homepage to start again, extended profile details for each dog
+stretch: 
+-extended profile details for each dog
+-dress up dog game?
 
