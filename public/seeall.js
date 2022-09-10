@@ -10,7 +10,7 @@ function showDog(dog) {
     dogCard.classList.add('dog-card')
 
     dogCard.innerHTML = `<img alt="dogpic" src=${dog.imageURL} class="dogpic"/>
-    <p class="dogname">${dog.name}</p>
+    <p class="dogname"><b>${dog.name}</b></p>
     <p class="doginfo">${dog.info}</p>
     `
     dogsContainer.appendChild(dogCard)

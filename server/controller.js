@@ -1,17 +1,3 @@
-
-// sequelize info goes here, as well as exports for seeding the database
-
-// require('dotenv').config();
-// const {CONNECTION_STRING} = process.env;
-// const Sequelize = require("sequelize");
-// const sequelize = new Sequelize(CONNECTION_STRING, {
-//     dialect: "postgres",
-//     dialectOptions: {
-//         ssl: {
-//             rejectUnauthorized: false
-//         }
-//     }
-// });
 const dogobj = require('./dogobj.json');
 const resultsArr = [];
 

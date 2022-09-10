@@ -31,6 +31,10 @@
     {"id": 8,
     "imageURL" :"../public/images/cat.png",
     "name": "Cat",
-    "info": "Are you sure you took the right quiz?"}
+    "info": "Are you sure you took the right quiz?"},
+    {"id": 9,
+    "imageURL" :"../public/images/robot.png",
+    "name": "Robo-dog",
+    "info": "Oh no, you've broke the quiz! The machines are taking over!"}
 ]
 
