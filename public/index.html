@@ -19,11 +19,11 @@
         <center>
         <div id="boxshadow"><div id="questionsbox">  
             <!-- <img src="line-paw-print-124993.png" height=150px width=250px> -->
-            <div id="firstname"><p><h4>Are you ready?<br>
-                <br>First, let's enter your name:</h4></p>
+            <div id="firstname"><p><h2>Are you ready?</h2>
+                <h5>First, let's enter your name:</h5></p>
             <label for="name"></label>
                 <input type="text" id="name" name="name" placeholder="Type name here"/>
-                <br>
+                <br><br>
                 <button id="next" onclick = "next('firstname','firstq')">Next</button>
             </div>
 
@@ -31,7 +31,7 @@
         <div class="question">
             <div class="qtitles"><h5>On hikes, do you like to get to the destination quickly, or stroll casually?</h5></div>
                 <label for="speedy">I'm a power hiker, move out of the way, slackers!</label><input type="radio" id="speedy" name="q1" value="1"/><br>
-                <label for="slow">I like to stop and smell the roses~</label><input type="radio"id="slow" name="q1" value="0"/><br>
+                <label for="slow">I like to stop and smell the roses~</label><input type="radio"id="slow" name="q1" value="0"/><br><br>
                 <button id="next" onclick = "next('firstq','secondq')">Next</button>
         </div></div>
 
@@ -42,7 +42,7 @@
                 <input type="radio" id="quick" name="q2" value="1"/>
             <br>
                 <label for="avg">An average amount of time, I guess?</label>
-                <input type="radio" id="avg" name="q2" value="0"/><br>
+                <input type="radio" id="avg" name="q2" value="0"/><br><br>
                 <button id="next" onclick = "next('secondq','thirdq')">Next</button>
             </div>
 
@@ -50,7 +50,7 @@
         <div id="thirdq" class="question">
             <div class="qtitles"><h5>What is your ideal coastal vacation activity?</h5></div>
                 <label for="beach">Playing sand volleyball on the beach!</label><input type="radio" id="beach" name="q3" value="1"/><br>
-                <label for="chill">A quiet bookstore & coffee shop that overlooks the shore.</label><input type="radio"id="chill" name="q3" value="0"/>
+                <label for="chill">A quiet bookstore & coffee shop that overlooks the shore.</label><input type="radio"id="chill" name="q3" value="0"/><br>
                 <br><button id="next" onclick = "next('thirdq','fourthq')">Next</button>
                 </div>
 
@@ -58,7 +58,7 @@
         <div id="fourthq" class="question">
             <div class="qtitles"><h5>It's time to remodel! What color pallete do you find yourself pulled to for your living room?</h5></div>
                 <label for="bright">Bright and bold, something that will go with a theme.</label><input type="radio" id="bright" name="q4" value="1"/><br>
-                <label for="blah">Neutrals, something that will go with anything.</label><input type="radio"id="blah" name="q4" value="0"/>
+                <label for="blah">Neutrals, something that will go with anything.</label><input type="radio"id="blah" name="q4" value="0"/><br>
                 <br><button id="next" onclick = "next('fourthq','fifthq')">Next</button>
                     </div>
 
@@ -66,7 +66,7 @@
         <div id="fifthq" class="question">
             <div class="qtitles"><h5>Your partner says they need you to pick something up from the store on the way home from work, what is your response?</h5></div>
                 <label for="extra">I'm doing it, plus their favorite candy as a surprise!</label><input type="radio" id="extra" name="q5" value="1"/><br>
-                <label for="na">If I have to...ugh.</label><input type="radio"id="na" name="q5" value="0"/>
+                <label for="na">If I have to...ugh.</label><input type="radio"id="na" name="q5" value="0"/><br>
                 <br><button id="next" onclick = "next('fifthq','sixthq')">Next</button>
                         </div>
 
@@ -74,19 +74,23 @@
         <div id="sixthq" class="question">
             <div class="qtitles"><h5>Which Winnie the Pooh character to you relate with more?</h5></div>
                 <label for="tigger">Tigger</label><input type="radio" id="tigger" name="q6" value="1"/><br>
-                <label for="pooh">Pooh</label><input type="radio"id="pooh" name="q6" value="0"/>
+                <label for="pooh">Pooh</label><input type="radio"id="pooh" name="q6" value="0"/><br>
                 <br><button id="next" onclick = "next('sixthq','seventhq')">Next</button>
             </div>
 
+            <div id="seventhq" class="question">
+                <div class="qtitles"><h5>Which type of dog do you feel is the most "doglike"?</h5></div>
+                    <label for="lab">Lab, retrievers...floppy ears and waggy tails!</label><input type="radio" id="lab" name="q7" value="1"/><br>
+                    <label for="wolf">Shepherds, huskies...the more wolflike, the better!</label><input type="radio"id="wolf" name="q7" value="0"/><br>
+                    <br><button id="next" onclick = "next('seventhq','eighthq')">Next</button>
+                </div>
 
-        <div id="seventhq" class="question">
-            <div class="qtitles"><h5>Which type of dog do you feel is the most "doglike"?</h5></div>
-                <label for="lab">Lab, retrievers...floppy ears and waggy tails!</label><input type="radio" id="lab" name="q7" value="1"/><br>
-                <label for="wolf">Shepherds, huskies...the more wolflike, the better!</label><input type="radio"id="wolf" name="q7" value="0"/>
+        <div id="eighthq" class="question">
+            <div class="qtitles"><h5>Does pineapple belong on pizza?</h5></div>
+                <label for="lab">No.</label><input type="radio" id="no1" name="q8" value="1"/><br>
+                <label for="wolf">Also no.</label><input type="radio"id="no2" name="q8" value="0"/>
                                 <br><br>
-
-<br><br>
-            <button id="submit" onclick="next('seventhq', 'results')">Submit</button><br>
+            <button id="submit" onclick="next('eighthq', 'results')">Submit</button><br>
             
         </div><div id="result"></div></div></div>
 

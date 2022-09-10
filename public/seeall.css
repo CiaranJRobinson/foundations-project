@@ -26,8 +26,7 @@ li a:hover {
 }
 
 h1 {
-    mix-blend-mode:darken;
-    z-index: 5;
+    mix-blend-mode: darken;
     float: left;
 }
 
@@ -58,6 +57,9 @@ header {
 html {
     background-color: #ffffff;
     background-image: linear-gradient(135deg, #ffffff 0%, #bcf8f9 33%, #9ef1fd 66%, #5599cc 100%);
+    height:auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     
 }
 
@@ -65,75 +67,10 @@ body {
     background-image: url("./images/9-97044_cute-dog-shiba-inu-wallpaper-laptop.png"); 
     background-position: right bottom;
     background-repeat: no-repeat;
-    position: relative;
-    
+    background-attachment: fixed;
+    height: auto;
 }
 
-#firstname {
-    display:block
-}
-
-#firstq {
-    display: none
-}
-
-#secondq{
-    display: none;
-}
-
-#thirdq{
-    display: none;
-}
-
-#fourthq {
-    display: none;
-}
-
-#fifthq {
-    display: none;
-}
-
-#sixthq {
-    display: none;
-}
-
-#seventhq {
-    display: none;
-}
-
-#questionsbox {
-    /* background: #E7E7E7;
-    background: -moz-linear-gradient(-45deg, #f4fbff 0%, #71D7E4 73%, #65B2BB 100%);
-    background: -webkit-linear-gradient(-45deg, #d5f7f2 0%, #71D7E4 73%, #65B2BB 100%);
-    background: linear-gradient(135deg, #E7E7E7 0%, #63adb7 73%, rgb(150, 184, 197) 100%); */
-
-    /* background-color: #e4fdff;
-    background-image: linear-gradient(135deg, #e4fdff 0%, #c4f7fd 50%, #94d2e2 100%);
-     */
-     background-color: #fff3ad;
-     background-image: linear-gradient(151deg, #fff3ad 0%, #efd986 33%, #f1ae30 66%, #c88410 100%);
-     
-    
-    
-    padding: 20px;
-    height: 300px;
-    opacity: 0.9;
-    }
-
-#boxshadow {
-    -webkit-box-shadow: 12px 11px 12px 4px rgba(0,0,0,0.39); 
-    box-shadow: 12px 11px 12px 4px rgba(0,0,0,0.39);
-    width: 600px;
-    border:1px solid rgb(63, 117, 119);
-    overflow: auto;
-    border-radius: 15px;
-    }
-        #questionbox::-webkit-scrollbar {
-            overflow-y: hidden;
-        }
-        #boxshadow::-webkit-scrollbar {
-            overflow: hidden;
-        }
 #dogcards-container {
     display: flex inline;
     flex-wrap: wrap;

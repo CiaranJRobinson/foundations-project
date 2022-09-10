@@ -41,6 +41,8 @@ function submitBtn (e) {
 
     const q7answer = document.querySelector('input[name="q7"]:checked').value;
 
+    const q8answer = document.querySelector('input[name="q8"]:checked').value;
+
 
     const body = {
         name : thename.value,
@@ -50,7 +52,8 @@ function submitBtn (e) {
         questionfour : q4answer,
         questionfive : q5answer,
         questionsix : q6answer,
-        questionseven : q7answer
+        questionseven : q7answer,
+        questioneight : q8answer
     };
     axios.post("http://localhost:4004/api/inputs", body)
         .then(response => {
