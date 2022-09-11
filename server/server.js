@@ -8,16 +8,6 @@ app.use(express.json());
 app.use(cors());
 
 
-// app.get('/', function(req,res){
-//     res.sendFile(path.join(__dirname, '/public/index.html'));
-// });
-// app.get('/js', function(req,res){
-//     res.sendFile(path.join(__dirname, '/public/index.js'));
-// });
-// app.get('/styles', function(req,res){
-//     res.sendFile(path.join(__dirname, '/public/index.css'));
-// });
-
 const {submitBtn, getResults, getDogs, getTheDogList} = require('./controller');
 
 app.get("/api/inputs", getResults);
