@@ -1,2 +1,2 @@
-web: npm start
+web: node app.js
 PORT: 4004
