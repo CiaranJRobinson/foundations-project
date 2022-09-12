@@ -162,6 +162,22 @@ if want to add sweaters later
     width: 500px;
 }
 
+.background3 {
+    background-image: url("./images/bg3.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 400px;
+    width: 500px;
+}
+
+.background4 {
+    background-image: url("./images/bg4.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 400px;
+    width: 500px;
+}
+
 .acc1 {
     background-image: url("./images/collar1.png");
     background-repeat: no-repeat;
@@ -188,6 +204,22 @@ if want to add sweaters later
 
 .acc4 {
     background-image: url("./images/collar4.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 400px;
+    width: 500px;
+}
+
+.acc5 {
+    background-image: url("./images/collar5.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 400px;
+    width: 500px;
+}
+
+.acc6 {
+    background-image: url("./images/collar6.png");
     background-repeat: no-repeat;
     position: absolute;
     height: 400px;
@@ -241,6 +273,14 @@ if want to add sweaters later
 
 .dog3 {
     background-image: url("./images/dog3.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 400px;
+    width: 500px;
+}
+
+.dog4 {
+    background-image: url("./images/dog4.png");
     background-repeat: no-repeat;
     position: absolute;
     height: 400px;

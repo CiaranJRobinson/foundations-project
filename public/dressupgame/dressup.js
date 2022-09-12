@@ -26,10 +26,10 @@ let state = {
 
 function nextbackground() {
     let background = document.querySelector("#background");
-    if (state.background < 2) {
+    if (state.background < 4) {
         state.background++;
         background.setAttribute("class", `background${state.background}`);
-    } else if (state.background === 2) {
+    } else if (state.background === 4) {
         state.background = 0;
         background.setAttribute("class", `background${state.background}`);
     }
@@ -46,10 +46,10 @@ function nexttoy() {
 }
 function nextacc() {
     let acc = document.querySelector("#acc");
-    if (state.acc < 4) {
+    if (state.acc < 6) {
         state.acc++;
         acc.setAttribute("class", `acc${state.acc}`);
-    } else if (state.acc === 4) {
+    } else if (state.acc === 6) {
         state.acc = 0;
         acc.setAttribute("class", `acc${state.acc}`);
     }
@@ -57,10 +57,10 @@ function nextacc() {
 
 function nextdog() {
     let dog = document.querySelector("#dog");
-    if (state.dog < 3) {
+    if (state.dog < 4) {
         state.dog++;
         dog.setAttribute("class", `dog${state.dog}`);
-    } else if (state.dog === 3) {
+    } else if (state.dog === 4) {
         state.dog = 1;
         dog.setAttribute("class", `dog${state.dog}`);
     }
