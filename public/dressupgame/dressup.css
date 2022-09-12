@@ -94,13 +94,6 @@ button:hover {
     width: 500px;
     z-index: 3;
 }
-/* 
-#sweater {
-    background-repeat: no-repeat;
-    position: absolute;
-    height: 700px;
-    width: 400px;
-} */
 
 #background {
     background-repeat: no-repeat;
@@ -125,20 +118,6 @@ button:hover {
     width: 500px;
     z-index: 4;
 }
-
-
-/* 
-if want to add sweaters later
-.sweater0 {
-    background-image: url("./images/");
-    background-repeat: no-repeat;
-    position: absolute;
-    height: 400px;
-    width: 500px;
-    z-index: 4;
-} */
-
-
 
 .background0 {
     position: absolute;
@@ -286,3 +265,49 @@ if want to add sweaters later
     height: 400px;
     width: 500px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*to add sweater option later if wanted*/
+
+/* 
+// function nextsweater() {
+    //     let sweater = document.querySelector("#sweater");
+    
+    //     if (state.sweater < 7) {
+    //         state.sweater++;
+    //         sweater.setAttribute("class", `sweater${state.sweater}`);
+    //     } else if (state.sweater === 7) {
+    //         state.sweater = 0;
+    //         sweater.setAttribute("class", `sweater${state.sweater}`);
+    //     }
+    //     } */
+
+
+    /* 
+#sweater {
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 700px;
+    width: 400px;
+} */
+
+    /* 
+.sweater0 {
+    background-image: url("./images/");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 400px;
+    width: 500px;
+    z-index: 4;
+} */

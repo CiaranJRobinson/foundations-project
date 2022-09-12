@@ -1,5 +1,4 @@
 let state = {
-    // sweater: 0,
     dog: 1,
     acc: 0,
     toy: 0,
@@ -11,18 +10,6 @@ let state = {
     nexttoy();
     nextbackground();
 
-
-// function nextsweater() {
-//     let sweater = document.querySelector("#sweater");
-
-//     if (state.sweater < 7) {
-//         state.sweater++;
-//         sweater.setAttribute("class", `sweater${state.sweater}`);
-//     } else if (state.sweater === 7) {
-//         state.sweater = 0;
-//         sweater.setAttribute("class", `sweater${state.sweater}`);
-//     }
-//     }
 
 function nextbackground() {
     let background = document.querySelector("#background");
