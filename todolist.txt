@@ -1,3 +1,20 @@
+
+
+
+Original Plan:
+
+Dog Personality Quiz
+
+Front end has multiple question prompts with radio button option answers, and a submit at the end that send the results to backend. This project will use SQL tables as a database to hold responses. The radio buttons are true or false. The booleans will then be evaluated for each column to total your score, +1 for true or 0 for false. The total score will be added, and the sum will lead to an if-elseif chain, showing if the sum is = a number, the name of that corresponding dog will take you to facts about that dog.
+
+MVP:
+    Front-end Radio buttons send values to back end
+    Data held on database
+    Data retrieved, evaluated, and returned to the front end to display results
+
+Stretch goals: Have it move to a separate page for results that populates with dog info and pictures.
+
+
 Things left to do:
 
 add one more dog and question, and coding, to make the see all page even
@@ -27,6 +44,9 @@ edit the buttons styling
 //done
 
 stretch: 
+-deploy
+//done
 -extended profile details for each dog
 -dress up dog game?
+//done
 
