@@ -1,6 +1,6 @@
 Puppy Themed Activity Site:
 
-Deployed: 
+Deployed: https://puppy-personality.herokuapp.com/
 Youtube video demo: https://www.youtube.com/watch?v=gnZUn0HLmf0
 
 The site allows the user to play two different dog themed web games: a personality quiz and a dog dressup game, while also drawing attention to the plight of homeless dogs near the user. By entering their zip code on the "Adopt a Pup" page, they're able to see up to 20 dogs in their area at local shelters and rescues. With so many dogs unable to find homes, having a fun way to view and interact with the site removes some stigma of
